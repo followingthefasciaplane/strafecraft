@@ -62,3 +62,5 @@ permission levels:
 - lose my virginity
 - momentum mod release
 - maybe handle errorz after this
+- maybe fix logging after this
+- maybe fix desync after this
