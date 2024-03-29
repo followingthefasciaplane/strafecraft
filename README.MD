@@ -1,4 +1,4 @@
-# WORK IN PROGRESS
+## WORK IN PROGRESS
 
 attempt at source engine bhopping and strafing in minecraft forge. still needs a lot of work its far from tested
 
@@ -51,3 +51,5 @@ permission levels:
 - create paths
 - improve physics
 - begin testing
+- finish disjointed logic
+- 100x more physics logic
