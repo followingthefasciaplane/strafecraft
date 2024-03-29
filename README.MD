@@ -1,6 +1,6 @@
 ## WORK IN PROGRESS
 
-attempt at source engine bhopping and strafing in minecraft forge. still needs a lot of work its far from tested
+attempt at source engine bhopping and strafing in minecraft forge. still needs a lot of work its far from tested. will not be immediately functional
 
 ## features
 
