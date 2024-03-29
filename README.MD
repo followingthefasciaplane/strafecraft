@@ -28,7 +28,7 @@ attempt at source engine bhopping and strafing in minecraft forge. still needs a
 
 ## permissions and hard caps
 
-permissions and configs stored and saved in `sourcemovement.toml`
+permissions and configs stored and saved in `sourcemovement.toml`. 
 hard cap max limits to physics features can only be changed this way
 
 - `maxAirAcceleration`
