@@ -1,0 +1,29 @@
+[RuntimeSettings]
+airAcceleration = 10.0
+airStrafeSpeed = 0.02
+groundSpeed = 0.1
+bunnyHopMultiplier = 1.2
+maxAirSpeed = 0.6
+friction = 0.8
+
+[MaximumLimits]
+maxAirAcceleration = 50.0
+maxAirStrafeSpeed = 1.0
+maxGroundSpeed = 1.0
+maxBunnyHopMultiplier = 3.0
+maxMaxAirSpeed = 1.0
+maxFriction = 1.0
+
+[Permissions]
+bhoptarget = "ADMIN"
+bhop = "PLAYER"
+permissions = "ADMIN"
+setPermission = "OWNER"
+airAcceleration = "ADMIN"
+airStrafeSpeed = "ADMIN"
+groundSpeed = "ADMIN"
+bunnyHopMultiplier = "ADMIN"
+maxAirSpeed = "ADMIN"
+friction = "ADMIN"
+config = "PLAYER"
+help = "PLAYER"
