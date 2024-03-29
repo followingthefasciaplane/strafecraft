@@ -16,7 +16,7 @@ attempt at source engine bhopping and strafing in minecraft forge. still needs a
 - `/sourcemovement bhop`: enables or disables the plugin for self
 - `/sourcemovement bhoptarget <targets> <true/false>`: enables or disables the plugin for the specified player(s)
 - `/sourcemovement permissions`: displays the current permissions
-- `/sourcemovement setPermission <command> <level>`: sets the permission level required to use a specific command (hardcapped max limits have to be changed in config file)
+- `/sourcemovement setPermission <command> <level>`: sets the permission level required to use a specific command (hardcapped max limits have to be changed in config file + others for now)
 - `/sourcemovement airAcceleration <value>`: sets the air acceleration value
 - `/sourcemovement airStrafeSpeed <value>`: sets the maximum air strafe speed, acts kinda like wishvel
 - `/sourcemovement groundSpeed <value>`: how fast players move on the ground
