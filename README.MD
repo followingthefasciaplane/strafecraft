@@ -50,6 +50,13 @@ permission levels:
 - .mods file
 - create paths
 - improve physics
+- fix physics
+- physics
+- get physical
 - begin testing
 - finish disjointed logic
 - 100x more physics logic
+- 10000x more physics logic
+- rework physics logic 
+- surfing in minecraft
+- lose my virginity
