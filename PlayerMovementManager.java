@@ -134,13 +134,31 @@ public class PlayerMovementManager {
     }
 
     private static void AirAccelerate(Vector3d velocity, Vector3d wishdir, double wishspeed, double accel, float tickLength) {
-        double currentSpeed = velocity.dotProduct(wishdir);
-        double addSpeed = wishspeed - currentSpeed;
+    double currentSpeed = velocity.dotProduct(wishdir);
+    double addSpeed = wishspeed - currentSpeed;
 
-        if (addSpeed > 0) {
-            double accelSpeed = accel * wishspeed * tickLength;
-            accelSpeed = Math.min(accelSpeed, addSpeed);
-            velocity = velocity.add(wishdir.scale(accelSpeed));
+    if (addSpeed > 0) {
+        double accelSpeed = accel * wishspeed * tickLength;
+        accelSpeed = Math.min(accelSpeed, addSpeed);
+
+        // Check if the projected velocity exceeds the speed limit
+        Vector3d projectedVelocity = velocity.add(wishdir.scale(accelSpeed));
+        if (projectedVelocity.length() > maxAirSpeed) {
+            double cosAngle = velocity.dotProduct(wishdir) / (velocity.length() * wishdir.length());
+            double angleRadians = Math.acos(cosAngle);
+            double angleDegrees = Math.toDegrees(angleRadians);
+
+            if (angleDegrees < 90) {
+                // Clamp the acceleration to maintain the speed limit
+                double clampedAccelSpeed = Math.max(0, maxAirSpeed - velocity.length());
+                accelSpeed = Math.min(accelSpeed, clampedAccelSpeed);
+            } else {
+                // Allow acceleration beyond the speed limit for angles greater than 90 degrees
+                accelSpeed = Math.min(accelSpeed, addSpeed);
+            }
         }
+
+        velocity = velocity.add(wishdir.scale(accelSpeed));
     }
+}
 }
